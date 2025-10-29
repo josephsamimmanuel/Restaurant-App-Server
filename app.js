@@ -7,7 +7,7 @@ const connectDB = require("./config/database");
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:5173", "https://jmenterprise.netlify.app"],
+    origin: ["http://localhost:5173", "https://restaurant-app-khaki-chi.vercel.app"],
     credentials: true,
     methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization", "Access-Control-Allow-Origin"],
