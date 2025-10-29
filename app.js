@@ -18,8 +18,12 @@ app.use(cookieParser());
 app.use(express.json());
 
 const userRouter = require("./routes/userRoute");
+const foodItemsRouter = require("./routes/foodItemsRoute");
+const masalaItemsRouter = require("./routes/masalaItemsRoute");
 
 app.use("/api/users", userRouter);
+app.use("/api/foodItems", foodItemsRouter);
+app.use("/api/masalaItems", masalaItemsRouter);
 
 connectDB().then(() => {
     app.listen(process.env.PORT, () => {
